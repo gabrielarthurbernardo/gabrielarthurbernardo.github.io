@@ -1,195 +1,143 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Arthur Gabriel Bernardo - IT Student and Aspiring Developer">
-  <title>Arthur Bernardo | Portfolio</title>
+  <meta name="description" content="Arthur Bernardo — BSIT Student, Developer, and Visual Editor">
+  <title>Arthur Bernardo</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
 
-<header>
-  <a href="#home" class="logo">a.<span>bernardo</span></a>
+  <header class="container">
+    <a href="#top" class="logo">arthur<span>.</span></a>
 
-  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact" class="nav-button">Let's talk ↗</a>
-  </nav>
-</header>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<main>
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <p class="eyebrow">HELLO, I'M ARTHUR</p>
-      <h1>Creating things<br>with <span>curiosity.</span></h1>
-      <p class="description">
-        An IT student exploring technology, development,
-        and design. Learning something new with every project.
+  <main class="container" id="top">
+    <section class="hero">
+      <p class="mono-label">BSIT @ NU CLARK · PHILIPPINES</p>
+      <h1>Arthur Bernardo</h1>
+      <p class="lead">
+        18-year-old Information Technology student building straightforward software
+        and cutting motion graphics. Less noise, more shipping.
       </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="primary-button">Explore my work ↘</a>
-        <a href="#about" class="secondary-button">About me ↗</a>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">Selected work ↓</a>
+        <a href="https://github.com/staryyboo" target="_blank" rel="noopener" class="btn-ghost">GitHub ↗</a>
       </div>
-      <p class="location">⌖ Philippines · BSIT Student at NU Clark</p>
-    </div>
+    </section>
 
-    <div class="hero-art">
-      <div class="art-card">
-        <span class="art-label">A LITTLE NOTE / 001</span>
-        <div class="art-symbol">✳</div>
-        <h2>Curious mind.<br><i>Creative approach.</i><br>Always learning.</h2>
-        <span class="art-footer">DESIGN × DEVELOPMENT</span>
+    <section class="section" id="work">
+      <div class="section-header">
+        <span class="mono-label">01</span>
+        <h2>Selected Work</h2>
       </div>
-      <span class="floating-note">✦ building something new</span>
-    </div>
-  </section>
 
-  <section class="about section" id="about">
-    <div>
-      <p class="eyebrow">01 / ABOUT ME</p>
-      <h2>A little about<br><i>who I am.</i></h2>
-    </div>
-    <div class="about-text">
-      <h3>
-        I'm an Information Technology student at
-        National University Clark, interested in
-        turning ideas into useful digital experiences.
-      </h3>
-      <p>
-        I'm currently developing my skills in programming
-        and web development while exploring creative fields
-        such as graphic design, video editing, and content creation.
+      <div class="project-list">
+        <article class="project-item">
+          <div class="project-top">
+            <h3>StockPilot</h3>
+            <span class="mono-tag">Java · Swing · File I/O</span>
+          </div>
+          <p>
+            Desktop inventory tracking application built in Java Swing with local file
+            persistence and stock level management.
+          </p>
+        </article>
+
+        <article class="project-item">
+          <div class="project-top">
+            <h3>Web Experiments</h3>
+            <span class="mono-tag">HTML · CSS · JavaScript</span>
+          </div>
+          <p>
+            Responsive front-end layouts and interactive UI builds focused on clean
+            structure without heavy frameworks.
+          </p>
+        </article>
+
+        <article class="project-item">
+          <div class="project-top">
+            <h3>Java Lab Exercises</h3>
+            <span class="mono-tag">Java · Problem Solving</span>
+          </div>
+          <p>
+            Algorithmic coursework covering 2D arrays, matrix operations, control flow,
+            and console utilities.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-header">
+        <span class="mono-label">02</span>
+        <h2>About &amp; Toolkit</h2>
+      </div>
+
+      <div class="about-copy">
+        <p>
+          I'm pursuing a Bachelor of Science in Information Technology at
+          <strong>National University Clark</strong>. Right now, I'm focused on
+          object-oriented programming, software fundamentals, and front-end web development.
+        </p>
+        <p>
+          Outside of code, I edit videos and motion graphics in DaVinci Resolve and After
+          Effects, experiment with graphic design, and occasionally stream. I like work
+          that is functional, intentional, and stripped of unnecessary fluff.
+        </p>
+      </div>
+
+      <div class="toolkit-grid">
+        <div>
+          <span class="mono-label">CODE</span>
+          <p>Java, Python, HTML, CSS, JavaScript</p>
+        </div>
+        <div>
+          <span class="mono-label">DESIGN</span>
+          <p>Figma, Photoshop, Illustrator, Lightroom</p>
+        </div>
+        <div>
+          <span class="mono-label">MOTION &amp; VIDEO</span>
+          <p>DaVinci Resolve, After Effects, Premiere Pro</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-header">
+        <span class="mono-label">03</span>
+        <h2>Contact</h2>
+      </div>
+
+      <p class="contact-copy">
+        Working on something interesting or want to connect? Drop an email or find me online.
       </p>
-      <p>
-        I enjoy learning through experience, experimenting
-        with new ideas, and improving with every project I make.
-      </p>
-      <div class="facts">
-        <div><small>EDUCATION</small><strong>BS Information Technology</strong></div>
-        <div><small>CURRENT FOCUS</small><strong>Development & Design</strong></div>
-        <div><small>LOCATION</small><strong>Philippines</strong></div>
+
+      <div class="contact-links">
+        <a href="mailto:YOUR-EMAIL@example.com" class="btn-primary">Send an email ↗</a>
+        <div class="socials">
+          <a href="https://github.com/staryyboo" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.instagram.com/arthur.staribu/" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="https://www.tiktok.com/@staryyboo" target="_blank" rel="noopener">TikTok ↗</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <section class="skills section" id="skills">
-    <p class="eyebrow">02 / MY TOOLKIT</p>
-    <h2>Things I'm learning<br><i>& working with.</i></h2>
-
-    <div class="skill-grid">
-      <article class="skill-card">
-        <span>01 / DEVELOPMENT</span>
-        <h3>Programming</h3>
-        <p>Building a foundation in software and web development.</p>
-        <div class="tags">Java · HTML · CSS · JavaScript · Python</div>
-      </article>
-
-      <article class="skill-card">
-        <span>02 / DESIGN</span>
-        <h3>Visual Design</h3>
-        <p>Exploring visual layouts, interfaces, and creative concepts.</p>
-        <div class="tags">Figma · Photoshop · Illustrator</div>
-      </article>
-
-      <article class="skill-card">
-        <span>03 / CREATIVE</span>
-        <h3>Media Production</h3>
-        <p>Creating and editing content for digital platforms.</p>
-        <div class="tags">DaVinci Resolve · Premiere Pro · After Effects</div>
-      </article>
-    </div>
-  </section>
-
-  <section class="projects section" id="projects">
-    <p class="eyebrow">03 / SELECTED WORK</p>
-    <h2>Small steps.<br><i>Real projects.</i></h2>
-    <p class="section-description">
-      A collection of projects, experiments, and things
-      I've worked on while learning.
-    </p>
-
-    <div class="project-grid">
-      <article class="project-card">
-        <div class="project-image stock">
-          <span>JAVA / DESKTOP APP</span>
-          <div class="mock-dashboard">StockPilot<br><small>Inventory Dashboard</small></div>
-        </div>
-        <div class="project-info">
-          <span>01 / APPLICATION</span>
-          <h3>StockPilot</h3>
-          <p>A Java Swing inventory management application concept.</p>
-          <div class="tags">Java · Swing · File Handling</div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-image web">
-          <span>WEB / DEVELOPMENT</span>
-          <div class="mock-web">My first<br><i>web experiments.</i></div>
-        </div>
-        <div class="project-info">
-          <span>02 / WEB DEVELOPMENT</span>
-          <h3>Web Experiments</h3>
-          <p>Practice websites and experiments using web technologies.</p>
-          <div class="tags">HTML · CSS · JavaScript</div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-image java">
-          <span>JAVA / FUNDAMENTALS</span>
-          <div class="mock-code">public class<br><i>Practice</i> {<br>&nbsp; learn();<br>&nbsp; build();<br>}</div>
-        </div>
-        <div class="project-info">
-          <span>03 / COURSEWORK</span>
-          <h3>Java Lab Exercises</h3>
-          <p>Programming exercises covering arrays, loops, matrices, and more.</p>
-          <div class="tags">Java · Problem Solving</div>
-        </div>
-      </article>
-    </div>
-    <p class="disclaimer">More projects will be added as I continue learning.</p>
-  </section>
-
-  <section class="education section">
-    <div>
-      <p class="eyebrow">04 / EDUCATION</p>
-      <h2>Where I'm<br><i>learning from.</i></h2>
-    </div>
-    <div class="education-card">
-      <div class="nu-logo">NU.</div>
-      <div>
-        <small>CURRENTLY STUDYING</small>
-        <h3>National University Clark</h3>
-        <p>Bachelor of Science in Information Technology</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <p class="eyebrow">05 / GET IN TOUCH</p>
-    <h2>Have an idea?<br><i>Let's connect.</i></h2>
-    <p>Feel free to drop a message, ask me anything, or connect with me!</p>
-    <a href="mailto:YOUR-EMAIL@example.com" class="contact-button">Send me an email ↗</a>
-  </section>
-</main>
-
-<footer>
-  <a href="#home" class="logo">a.<span>bernardo</span></a>
-  <p>Designed & built with curiosity. © <span id="year"></span></p>
-  <div class="socials">
-    <a href="https://github.com/staryyboo" target="_blank">GitHub ↗</a>
-    <a href="https://www.instagram.com/arthur.staribu/" target="_blank">Instagram ↗</a>
-    <a href="https://www.tiktok.com/@staryyboo" target="_blank">TikTok ↗</a>
-  </div>
-</footer>
+  <footer class="container">
+    <span>© <span id="year"></span> Arthur Bernardo</span>
+    <span class="mono-label">CLARK, PH</span>
+  </footer>
 
 </body>
 </html>
