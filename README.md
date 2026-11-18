@@ -7,12 +7,12 @@ Personal portfolio site built with plain HTML, CSS, and JavaScript.
 ## Files
 
 - `index.html` — Page structure, project links (`ITE-102`), about, and contact info
-- `style.css` — Layout, responsive rules, and typography (`Satoshi` + `IBM Plex Mono`)
+- `style.css` — Layout, responsive rules, and typography (Satoshi + IBM Plex Mono Fonts)
 - `script.js` — Mobile navigation toggle and dynamic footer year
 
 ## Run Locally
 
-Clone the repository and open `index.html` in any browser:
+Clone the repository and open index.html in any browser:
 
 ```bash
 git clone [https://github.com/gabrielarthurbernardo/gabrielarthurbernardo.github.io.git](https://github.com/gabrielarthurbernardo/gabrielarthurbernardo.github.io.git)
