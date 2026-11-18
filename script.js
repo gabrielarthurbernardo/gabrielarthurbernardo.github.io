@@ -1,26 +1,22 @@
-
-// Mobile navigation
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector("nav");
 
-menuButton.addEventListener("click", () => {
-  navigation.classList.toggle("open");
-
-  const isOpen = navigation.classList.contains("open");
-
+function setMenuState(isOpen) {
+  navigation.classList.toggle("open", isOpen);
   menuButton.textContent = isOpen ? "×" : "☰";
-  menuButton.setAttribute("aria-expanded", isOpen);
+  menuButton.setAttribute("aria-expanded", String(isOpen));
+}
+
+menuButton.addEventListener("click", () => {
+  setMenuState(!navigation.classList.contains("open"));
 });
 
-// Close navigation after clicking a link
 navigation.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navigation.classList.remove("open");
-    menuButton.textContent = "☰";
-    menuButton.setAttribute("aria-expanded", "false");
-  });
+  link.addEventListener("click", () => setMenuState(false));
 });
 
-// Automatically update copyright year
-document.querySelector("#year").textContent =
-  new Date().getFullYear();
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") setMenuState(false);
+});
+
+document.querySelector("#year").textContent = new Date().getFullYear();
