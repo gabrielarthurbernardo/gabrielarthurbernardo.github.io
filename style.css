@@ -42,7 +42,7 @@ a {
   padding: 0 24px;
 }
 
-/* Header */
+/* Header placement hereee */
 header {
   height: 76px;
   display: flex;
@@ -149,7 +149,7 @@ nav a:hover {
   color: var(--ink);
 }
 
-/* Sections */
+/* SECTIONS HERE*/ 
 .section {
   padding: 72px 0;
   border-bottom: 1px solid var(--line);
@@ -168,7 +168,7 @@ nav a:hover {
   letter-spacing: -0.02em;
 }
 
-/* Work List */
+/* LISTS OF WORKK*/
 .project-list {
   display: flex;
   flex-direction: column;
@@ -216,7 +216,7 @@ nav a:hover {
   max-width: 560px;
 }
 
-/* About, Education & Toolkit */
+/* ABOUTS , EDUCATIONS, TOOLS USED */
 .about-copy {
   display: flex;
   flex-direction: column;
@@ -293,7 +293,7 @@ nav a:hover {
   color: var(--ink);
 }
 
-/* Footer */
+/* FOOOTER */
 footer {
   height: 76px;
   display: flex;
@@ -303,7 +303,7 @@ footer {
   color: var(--muted);
 }
 
-/* Mobile */
+/* this is for the mobileUI */
 @media (max-width: 600px) {
   .menu-toggle {
     display: block;
