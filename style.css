@@ -216,7 +216,7 @@ nav a:hover {
   max-width: 560px;
 }
 
-/* About & Toolkit */
+/* About, Education & Toolkit */
 .about-copy {
   display: flex;
   flex-direction: column;
@@ -225,16 +225,34 @@ nav a:hover {
   max-width: 600px;
 }
 
-.about-copy strong {
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.edu-row h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 6px;
   color: var(--ink);
-  font-weight: 500;
+}
+
+.edu-row p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 2px;
 }
 
 .toolkit-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin-top: 36px;
+  margin-top: 28px;
   padding-top: 28px;
   border-top: 1px solid var(--line);
 }
@@ -317,7 +335,8 @@ footer {
     padding: 56px 0;
   }
 
-  .project-top {
+  .project-top,
+  .edu-row {
     flex-direction: column;
     gap: 4px;
   }
